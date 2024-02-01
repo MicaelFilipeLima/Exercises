@@ -9,15 +9,15 @@ const produtos = [
   for (let i = 0; i < produtos.length; i++) {
     let produtoTabelaLinha = document.createElement('tr');
 
-    let produtoTabelaDadosNome = document.createElement('td');
+    let produtoTabelaDadosNome = document.createElement('th');
     produtoTabelaDadosNome.innerHTML = produtos[i].Nome;
     produtoTabelaLinha.appendChild(produtoTabelaDadosNome);
 
-    let produtoTabelaDadosCategoria = document.createElement('td');
+    let produtoTabelaDadosCategoria = document.createElement('th');
     produtoTabelaDadosCategoria.innerHTML = produtos[i].Categoria;
     produtoTabelaLinha.appendChild(produtoTabelaDadosCategoria);
 
-    let produtoTabelaDadosPreco = document.createElement('td');
+    let produtoTabelaDadosPreco = document.createElement('th');
     produtoTabelaDadosPreco.innerHTML = produtos[i].preco;
     produtoTabelaLinha.appendChild(produtoTabelaDadosPreco);
 
